@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import { Text, Image } from "@paciolan/primitives";
 import { Tooltip } from "@paciolan/tooltip";
 import styled from "styled-components";

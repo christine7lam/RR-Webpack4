@@ -1,9 +1,9 @@
 import React from "react";
 import { Layout, Row, Column } from "@paciolan/primitives";
 import Button from "@material-ui/core/Button";
-import SetupCard from "./sections/SetupCard";
-import DonationCard from "./sections/DonationCard";
-import OptionsCard from "./sections/OptionsCard";
+// import SetupCard from "./sections/SetupCard";
+// import DonationCard from "./sections/DonationCard";
+// import OptionsCard from "./sections/OptionsCard";
 import styled from "styled-components";
 
 const CardsContainer = styled(Layout)`
@@ -61,6 +61,7 @@ const BackButton = CancelButton.extend`
   position: relative;
   right: 32px;
 `;
+
 class Create extends React.Component {
   constructor(props) {
     super(props);
@@ -76,10 +77,13 @@ class Create extends React.Component {
   componentDidUpdate() {}
 
   render() {
+
+    let i = 0;
     return (
       <CardsContainer>
+        just testing
         <BackButtonContainer>
-          <BackButton>Go Back</BackButton>
+          <BackButton>Go Back {testFunction} </BackButton>
         </BackButtonContainer>
         <Row>
           <Column>
